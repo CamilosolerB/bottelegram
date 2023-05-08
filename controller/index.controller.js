@@ -13,7 +13,11 @@ bot.on('polling_error', (error)=>{
 controller.SayHello = async (req,res) =>{
     const {message} = req.body;
     bot.sendMessage(chat_id,message);
-    res.redirect(307,'/twit');
+    res.json({message: "Mensaje enviado correctamente"});
+    //res.redirect(307,'/twit');
+}
+controller.runUp = (req,res)=>{
+    res.send("El servidor esta arrancando correctamente");
 }
 controller.sendTwitter = (req,res) =>{
     const {message} = req.body;
