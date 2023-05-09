@@ -1,7 +1,7 @@
 //llamado de las librerias
 const express = require('express');
 const cors = require('cors');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 //implementacion de express
 const app = express();
 
