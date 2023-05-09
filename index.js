@@ -7,6 +7,7 @@ const app = express();
 
 //app.use(morgan('dev'));
 app.use(express.json());
+app.use(cors());
 //uso de la rutas
 app.use(require('./routes/index.routes'));
 //configuracion del puerto
