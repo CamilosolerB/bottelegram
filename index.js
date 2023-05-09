@@ -5,7 +5,7 @@ const morgan = require('morgan');
 //implementacion de express
 const app = express();
 
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 app.use(express.json());
 //uso de la rutas
 app.use(require('./routes/index.routes'));
