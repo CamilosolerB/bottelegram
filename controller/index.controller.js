@@ -21,6 +21,7 @@ controller.runUp = (req,res)=>{
 }
 controller.sendTwitter = (req,res) =>{
     const {message} = req.body;
+    console.log(message);
     tokens.Twitter.post('statuses/update',{ status: message}, (err, data, response) =>{
         console.log(data);
     });
