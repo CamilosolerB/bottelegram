@@ -12,7 +12,9 @@ bot.on('polling_error', (error)=>{
 
 controller.SayHello = async (req,res) =>{
     const {message} = req.body;
-    bot.sendMessage(chat_id,message);
+    for(let j = 0; j < chat_id.length; j++){
+        bot.sendMessage(chat_id,message);
+    }
     res.json({message: "Mensaje enviado correctamente"});
     //res.redirect(307,'/twit');
 }

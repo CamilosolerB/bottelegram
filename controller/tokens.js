@@ -2,7 +2,7 @@ const Twit = require("twit");
 
 const keys = {
     "tokenTelegram": "6113995402:AAE37U7PXKJWuMpkB8o7mrrThZ82Ii1lhTA",
-    "chat_id": 5916757222,
+    "chat_id": [5916757222,394724526],
     "Twitter": new Twit({
         consumer_key: '976564855657426945-yPZeNzjV0U5KetMqLZL8dUNYXjSyIJt',
         consumer_secret: 'F8w0Ag2sIKxAAt1o56Ktb2IOvxjViPwud6ZQs82OlTUg6',
