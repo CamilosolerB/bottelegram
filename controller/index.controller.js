@@ -7,19 +7,6 @@ const bot = new TelegramBot(token, {polling:true})
 const chatId = [];
 const axios = require('axios');
 //encendido del bot
-bot.on('polling_error', (error)=>{
-    console.log(error)
-})
-bot.onText(/\start/, (msg)=>{
-    const chat_id = msg.chat_id;
-    const message = "Bienvenido al proyecto de plantita feliz, en cuanto el esp este activado podras empezar a recibir las alertas de nuestra plantita, estate atento :D";
-    chatId.push(chat_id);
-    bot.sendMessage(chat_id,message);
-});
-controller.botHazAlgo = (req, res) => {
-    bot.processUpdate(req.body);
-    res.sendStatus(200);
-}
 controller.SayHello = async (req,res) =>{
     const {message} = req.body;
     for(let id = 0; id < chatId.length; j++){
