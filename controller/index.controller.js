@@ -18,6 +18,7 @@ bot.onText(/\start/, (msg)=>{
 });
 controller.botHazAlgo = (req, res) => {
     bot.processUpdate(req.body);
+    res.sendStatus(200);
 }
 controller.SayHello = async (req,res) =>{
     const {message} = req.body;
