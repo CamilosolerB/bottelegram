@@ -19,7 +19,7 @@ app.post('/message',(req,res)=>{
     console.log("Chat ID: " + chat_id);
     res.sendStatus(200);
 })
-bot.setWebHook('/message');
+bot.setWebHook('https:\\bottelegram-production.up.railway.app/message');
 app.use(require('./routes/index.routes'));
 //configuracion del puerto
 app.set('port', process.env.PORT || 3000);
