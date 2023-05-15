@@ -16,6 +16,9 @@ bot.onText(/\start/, (msg)=>{
     chatId.push(chat_id);
     bot.sendMessage(chat_id,message);
 });
+controller.botHazAlgo = (req, res) => {
+    bot.processUpdate(req.body);
+}
 controller.SayHello = async (req,res) =>{
     const {message} = req.body;
     for(let id = 0; id < chatId.length; j++){
